@@ -4,4 +4,19 @@ body {
 
 .container {
 	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+.left-side{
+	background-color: rgb(10, 191, 204);
+}
+
+.right-side {
+	display:grid;
+
+}
+
+img {
+	height:20px;
+	width: 20px;
 }
