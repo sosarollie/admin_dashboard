@@ -13,7 +13,6 @@ body {
 
 .right-side {
 	display:grid;
-
 }
 
 img {
@@ -68,4 +67,10 @@ img {
 	display: flex;
 	gap: 25px;
 	padding-right: 50px;
+}
+
+.body {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
