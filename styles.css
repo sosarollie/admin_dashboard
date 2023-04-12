@@ -14,7 +14,7 @@ body {
 .right-side {
 	display:grid;
 	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 100px 100px 400px 400px;
+	grid-template-rows: 50px 200px 1fr 1fr;
 }
 
 img {
@@ -26,6 +26,7 @@ img {
 	display:flex;
 	grid-column: 1 / span 2;
 	justify-content: space-between;
+	align-items: flex-start;
 	padding: 0px 90px 0px 50px;
 }
 
@@ -42,7 +43,6 @@ img {
 .header2 {
 	display:flex;
 	grid-column: 1 / span 2;
-	padding-top: 20px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -71,4 +71,19 @@ img {
 	display: flex;
 	gap: 25px;
 	padding-right: 50px;
+}
+
+.projects-container {
+	display: grid;
+	grid-row: 3 / span 2;
+	grid-column: 1 / 2;
+}
+
+.announcements-container {
+	display: grid;
+	grid-column: 2 / 3;
+}
+
+.trending-container {
+	display: grid;
 }
