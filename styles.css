@@ -1,3 +1,7 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -9,7 +13,8 @@ body {
 }
 
 .left-side{
-	background-color: rgb(10, 191, 204);
+	background-color: rgb(19, 171, 179);
+	border-radius: 2px;
 }
 
 .right-side {
@@ -42,21 +47,30 @@ img {
 }
 
 .header2 {
-	display:flex;
+	display: flex;
 	grid-column: 1 / span 2;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: 0px 5px 1px 0.5px  #b9b8b8;
+	border-radius: 3px;
 }
 
 .left-side-header2 {
 	padding-left: 30px;
 	display: grid;
 	grid-template-columns: 50% 50%;
+	font-size: 20px;
 }
 
 .left-side-header2 .hi {
 	margin: 0px;
 	align-self: flex-end;
+	font-size: 15px;
+}
+
+.left-side-header2 .name {
+	margin-top: 10px;
+	min-width: 250px;
 }
 
 .left-side-header2 .icon {
@@ -74,10 +88,28 @@ img {
 	padding-right: 50px;
 }
 
+.blue-btn {
+	width: 80px;
+	height: 35px;
+	border-radius: 15px;
+	border: none;
+	background-color: rgb(117, 117, 202);
+	color: white;
+	font-weight: bold;
+}
+
 .projects-container {
-	display: grid;
 	grid-row: 3 / span 2;
 	grid-column: 1 / 2;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 33% 33% 33%;
+	gap: 15px;
 }
 
 .announcements-container {
@@ -87,6 +119,10 @@ img {
 
 .trending-container {
 	display: grid;
+}
+
+.projects-container, .announcements-container, .trending-container {
+	background-color: rgb(208, 228, 230);
 }
 
 .dashboard {
@@ -122,8 +158,16 @@ img {
 }
 
 .searchbar {
-	background-color: rgb(182, 228, 211);
+	background-color: rgb(208, 228, 230);
 	width: 550px;
 	border-radius: 10px;
 	border: none;
+}
+
+.name {
+	font-weight: 700;
+}
+
+.projects-container, .announcements-container {
+	margin-top: 3px;
 }
