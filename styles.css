@@ -24,8 +24,9 @@ body {
 }
 
 img {
-	height:20px;
-	width: 20px;
+	height:60px;
+	width:60px;
+	border-radius: 50px;
 }
 
 .header1 {
@@ -39,6 +40,7 @@ img {
 .right-side-header {
 	display:flex;
 	justify-content: space-between;
+	align-items: center;
 	gap: 30px;
 }
 
@@ -108,11 +110,18 @@ img {
 .cards {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 33% 33% 33%;
+	grid-template-rows: repeat(3, 225px);
 	gap: 15px;
 }
 
+.card p {
+	margin-top: 0px;
+}
+
 .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-color: white;
 	box-shadow: 0px 2px 1px 0.5px  #b9b8b8;
 	box-shadow: -5px 0px 1px rgb(245, 200, 2);
@@ -120,9 +129,17 @@ img {
 	font-size: 14px;
 }
 
+.card .icons {
+	display: flex;
+	gap: 15px;
+	align-self: flex-end;
+	justify-self: flex-end;
+}
+
 .announcements {
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
 }
 
 .announcement {
@@ -157,18 +174,22 @@ img {
 .trending {
 	display: grid;
 	grid-template-columns: 30% 70%;
-	grid-template-rows: repeat(2, 10%);
+	grid-template-rows: repeat(2, 36.5px);
 	align-items: center;
 	background-color: white;
 	font-size: 14px;
+}
+
+.cards p, .trendings p, .announcements p {
+	color: rgb(95, 94, 94);
 }
 
 .trending .icon {
 	grid-row: 1/ span 2;
 	align-self: center;
 	justify-self: center;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 }
 
 .trending h5 {
@@ -179,8 +200,8 @@ img {
 	margin-top: 2px;
 }
 
-.card, .trendings, .announcements {
-	border-radius: 10px;
+.card, .trending, .announcement {
+	border-radius: 6px;
 }
 
 .dashboard {
